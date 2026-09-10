@@ -4,10 +4,10 @@ level = "debug"
 
 [manifest]
 # Manifest erişim kodu sağlayıcısı.
-# "steamrun" = JSON yanıt veren alternatif servis.
-# "wudrm" = Düz metin yanıt veren alternatif servis.
-# "opensteamtool" = Varsayılan servis.
-url = "steamrun"
+# "steamrun" = JSON yanıt veren alternatif servis (devre dışı / 404).
+# "wudrm" = Düz metin yanıt veren aktif servis (Önerilen).
+# "opensteamtool" = Varsayılan servis (Cloudflare 403 engeline takılabilir).
+url = "wudrm"
 
 # İnternet bağlantısı zaman aşımı değerleri (milisaniye).
 timeout_resolve_ms = 5000
@@ -20,7 +20,7 @@ timeout_recv_ms = 10000
 enable_api = true
 
 [lua]
-# Boş bırakılırsa yalnızca Steam\config\lua klasörü kullanılır.
+# Boş bırakılırsa yalnızca Steam\\config\\lua klasörü kullanılır.
 
 [inject]
 # Oyun işlemine ek DLL yükleme özelliği.
