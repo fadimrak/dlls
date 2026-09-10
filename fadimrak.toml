@@ -1,0 +1,34 @@
+[log]
+# Hata ayıklama kayıtlarının ayrıntı seviyesi.
+level = "debug"
+
+[manifest]
+# Manifest erişim kodu sağlayıcısı.
+# "steamrun" = JSON yanıt veren alternatif servis.
+# "wudrm" = Düz metin yanıt veren alternatif servis.
+# "opensteamtool" = Varsayılan servis.
+url = "steamrun"
+
+# İnternet bağlantısı zaman aşımı değerleri (milisaniye).
+timeout_resolve_ms = 5000
+timeout_connect_ms = 5000
+timeout_send_ms = 10000
+timeout_recv_ms = 10000
+
+[stats]
+# Oyun istatistikleri için internet servisini kullanır.
+enable_api = true
+
+[lua]
+# Boş bırakılırsa yalnızca Steam\config\lua klasörü kullanılır.
+
+[inject]
+# Oyun işlemine ek DLL yükleme özelliği.
+enabled = false
+
+[cloud]
+# Bulut kayıt yönlendirme özelliği.
+enabled = false
+
+[remote]
+# Boş bırakılırsa hazır metadata kaynakları kullanılır.
